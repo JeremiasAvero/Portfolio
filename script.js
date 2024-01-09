@@ -10,12 +10,22 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   let mainContainer = document.getElementById("main");
-  let btn = document.getElementById("nav-res-btn");
+  let btnMenu = document.getElementById("nav-res-btn");
 
-  btn.addEventListener("click", () => {
+  btnMenu.addEventListener("click", () => {
     // Toggle visibility using a class
     mainContainer.classList.toggle("hidden");
   });
+
+  let enlaces = document.getElementsByClassName("enlace");
+
+  // Iterar sobre la colección de elementos y agregar event listener a cada uno
+  for (let i = 0; i < enlaces.length; i++) {
+    enlaces[i].addEventListener("click", () => {
+      location.href = `index.html#${enlaces[i].id}`;
+      mainContainer.classList.toggle("hidden");
+    });
+  }
 });
 // let mainContainer = document.getElementById("main");
 // let btn = document.getElementById("nav-res-btn");

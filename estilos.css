@@ -466,6 +466,16 @@ a {
   width: 100px;
   height: 100%;
 }
+@media screen and (max-width: 1300px) {
+  .proyectos-container .proyectos {
+    display: flex;
+    width: 90%;
+  }
+  .proyectos-container .proyectos .card {
+    display: flex;
+    width: 25%;
+  }
+}
 @media screen and (max-width: 1200px) {
   .navbar h1 {
     font-size: 1.8rem;
@@ -492,6 +502,11 @@ a {
     font-size: 3rem;
   }
 }
+@media screen and (min-width: 800px) {
+  .main {
+    display: block;
+  }
+}
 @media screen and (max-width: 800px) {
   .main {
     margin: 0;
@@ -502,7 +517,7 @@ a {
     padding: 0;
     justify-content: space-around;
     align-items: center;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     padding-top: 10px;
   }
@@ -539,6 +554,7 @@ a {
     height: 250px;
     width: 250px;
     border-radius: 20px;
+    margin-bottom: 150px;
   }
 
   .inicio .container .text-container {
@@ -572,25 +588,59 @@ a {
     padding: 0;
     margin: 0;
   }
-  .sobremi-container .sobremi h1 {
-    font-size: 1.7rem;
-  }
   .sobremi-container .sobremi ul {
-    width: 60%;
-    padding: 0;
+    list-style: none;
+    padding: 15px;
   }
-  .sobremi-container .sobremi ul li {
-    font-size: 1rem;
+  .sidebar {
+    height: 200px;
+    width: 100px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: left;
+    position: absolute;
+    top: 200px;
+    left: 140px;
+    z-index: 1;
   }
-  .sobremi-container .cursos h1 {
-    font-size: 1.7rem;
+  .sidebar div {
+    background: #000000;
+
+    box-shadow: 4px 4px 7px rgb(255, 255, 255);
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
   }
-  .sobremi-container .cursos ul {
-    width: 70%;
+
+  .sidebar div a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #ffffff;
+    z-index: 2;
   }
-  .sobremi-container .cursos ul li {
-    font-size: 1rem;
-    margin: 10px;
+  .sidebar div a i {
+    font-size: 0.7rem;
+    margin: 5px;
+    z-index: 1;
+  }
+  .sidebar div a p {
+    font-size: 0.7rem;
+    z-index: 1;
+  }
+  .sidebar div:hover {
+    background: #52029d;
+    transform: translateX(0);
+    transition: 1s;
   }
 
   .conocimientos {
