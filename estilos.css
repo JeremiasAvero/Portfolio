@@ -172,7 +172,7 @@ a {
 }
 .inicio .container .img-container img {
   height: 40%;
-  width: 300px;
+  width: 330px;
   border-radius: 20px;
 }
 
@@ -577,7 +577,7 @@ a {
     height: 50%;
     width: 100%;
     font-weight: 700;
-    margin-top: 0;
+    margin-bottom: 0;
   }
   .sobremi-container {
     height: 100%;
