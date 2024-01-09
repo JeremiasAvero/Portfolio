@@ -1,21 +1,31 @@
 * {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  box-sizing: initial;
 }
 html {
   margin: 0;
   padding: 0;
+  width: 100%;
+}
+.main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 body {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 a {
   text-decoration: none;
 }
 
 /* sidebar */
+
+.nav-res {
+  display: none;
+}
 .sidebar {
   background: none;
   margin: 0;
@@ -483,12 +493,18 @@ a {
   }
 }
 @media screen and (max-width: 800px) {
+  .main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
   .navbar {
     padding: 0;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     z-index: 1;
-    width: 50%;
+    width: 100%;
+    padding-top: 10px;
   }
   .navbar h1 {
     font-size: 1.4rem;
@@ -497,53 +513,71 @@ a {
   .sidebar {
     display: none;
   }
+  .inicio {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
   .inicio .container {
     display: flex;
     flex-direction: column;
     height: 100%;
+
+    margin: 0;
+    padding: 0;
     width: 100%;
   }
   .inicio .container .img-container {
     height: 50%;
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .inicio .container .img-container img {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     border-radius: 20px;
   }
 
   .inicio .container .text-container {
+    padding: 0;
+    margin: 0;
     height: 50%;
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
   }
 
   .inicio .container .text-container h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     height: 50%;
     text-decoration: underline rgb(90, 90, 90);
   }
   .inicio .container .text-container p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     height: 50%;
+    width: 100%;
     font-weight: 700;
   }
   .sobremi-container {
     height: 100%;
   }
+  .sobremi-container .sobremi {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
   .sobremi-container .sobremi h1 {
     font-size: 1.7rem;
   }
   .sobremi-container .sobremi ul {
-    width: 100%;
+    width: 60%;
+    padding: 0;
   }
   .sobremi-container .sobremi ul li {
     font-size: 1rem;
@@ -624,5 +658,63 @@ a {
   .contacto .form form textarea {
     width: 300px;
     height: 200px;
+  }
+  .navbar i {
+    cursor: pointer;
+  }
+  .nav-res {
+    color: #fff;
+    background-image: linear-gradient(
+      to bottom,
+      #000000,
+      #000000,
+      #30064d,
+      #ff0080,
+      #773f0b
+    );
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+  }
+
+  .nav-res h1 {
+    color: #ffb302;
+    text-shadow: 3px 3px 3px #d30404;
+    display: flex;
+    font-weight: 800;
+    font-size: 2.3rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-res .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-res .redes p {
+    font-size: 1.4rem;
+  }
+  .nav-res .redes a {
+    font-size: 2rem;
+
+    color: #fff;
+    margin: 10px;
+  }
+  .nav-res ul {
+    list-style: circle #ff7b00;
+  }
+  .nav-res ul li {
+    color: #fff;
+    margin: 30px;
+    font-size: 2rem;
+  }
+  .nav-res ul li a {
+    color: #fff;
   }
 }
