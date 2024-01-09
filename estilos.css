@@ -3,6 +3,10 @@
     "Lucida Sans", Arial, sans-serif;
   box-sizing: initial;
 }
+html {
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0px;
   padding: 0px;
@@ -158,7 +162,7 @@ a {
 }
 .inicio .container .img-container img {
   height: 40%;
-  width: 350px;
+  width: 300px;
   border-radius: 20px;
 }
 
@@ -451,4 +455,174 @@ a {
 .contacto .contactame a img {
   width: 100px;
   height: 100%;
+}
+@media screen and (max-width: 1200px) {
+  .navbar h1 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .navbar .redes {
+    display: none;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navbar i {
+    display: flex;
+    color: #fff;
+    font-size: 2rem;
+  }
+  .inicio .container .img-container img {
+    height: 40%;
+    width: 250px;
+    border-radius: 20px;
+  }
+  .inicio .container .text-container h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .navbar {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    width: 50%;
+  }
+  .navbar h1 {
+    font-size: 1.4rem;
+    justify-content: center;
+  }
+  .sidebar {
+    display: none;
+  }
+  .inicio .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  .inicio .container .img-container {
+    height: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .inicio .container .img-container img {
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+  }
+
+  .inicio .container .text-container {
+    height: 50%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .inicio .container .text-container h1 {
+    font-size: 3rem;
+    height: 50%;
+    text-decoration: underline rgb(90, 90, 90);
+  }
+  .inicio .container .text-container p {
+    font-size: 1.1rem;
+    height: 50%;
+    font-weight: 700;
+  }
+  .sobremi-container {
+    height: 100%;
+  }
+  .sobremi-container .sobremi h1 {
+    font-size: 1.7rem;
+  }
+  .sobremi-container .sobremi ul {
+    width: 100%;
+  }
+  .sobremi-container .sobremi ul li {
+    font-size: 1rem;
+  }
+  .sobremi-container .cursos h1 {
+    font-size: 1.7rem;
+  }
+  .sobremi-container .cursos ul {
+    width: 70%;
+  }
+  .sobremi-container .cursos ul li {
+    font-size: 1rem;
+    margin: 10px;
+  }
+
+  .conocimientos {
+    width: 100%;
+    height: 100%;
+  }
+
+  .conocimientos p {
+    margin: 20px;
+  }
+
+  .conocimientos .aptitudes .tech-list {
+    width: 100%;
+  }
+
+  .conocimientos .aptitudes .tech-list .img-container {
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 80px;
+  }
+  .conocimientos .aptitudes .tech-list .img-container img {
+    height: 40px;
+    width: 40px;
+  }
+  .proyectos-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .proyectos-container h1 {
+    margin-top: 100px;
+  }
+  .proyectos-container .proyectos {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .proyectos-container .proyectos .card {
+    display: flex;
+    height: 30%;
+    width: 80%;
+  }
+  .proyectos-container .proyectos .card p {
+    font-size: 0.9rem;
+    width: 80%;
+  }
+  .proyectos-container .proyectos .card a {
+    font-size: 1rem;
+    margin: 10px;
+    width: 80%;
+  }
+  .contacto {
+    height: 100%;
+    width: 100%;
+  }
+
+  .contacto .form form textarea {
+    width: 300px;
+    height: 200px;
+  }
 }
