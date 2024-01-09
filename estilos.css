@@ -716,7 +716,7 @@ a {
   }
 }
 
-@media screen and (min-width: 230px) {
+@media screen and (max-width: 500px) {
   .sidebar {
     margin: 0 auto;
     height: 200px;
