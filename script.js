@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Simular un clic en el enlace para iniciar la descarga
     var link = document.createElement("a");
-    link.href = "JeremiasAvero.pdf"; // Asegúrate de que sea la ruta correcta
+    link.href = "JeremiasAvero_CV.pdf"; // Asegúrate de que sea la ruta correcta
     link.download = "JeremiasAvero-Resume-CV.pdf";
     link.click();
   });
