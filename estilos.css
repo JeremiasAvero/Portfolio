@@ -392,14 +392,15 @@ a {
   flex-wrap: wrap;
   padding-left: 100px;
   padding-right: 100px;
+
 }
 .proyectos-container .proyectos .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 20%;
-  height: 400px;
+  width:30%;
+  height: 600px;
   margin: 20px;
   border-radius: 20px;
   box-shadow: 4px 4px 7px rgb(255, 255, 255);
@@ -414,6 +415,7 @@ a {
 
 /* contacto */
 .contacto {
+
   color: #fff;
   background-image: linear-gradient(
     to bottom,
@@ -431,9 +433,10 @@ a {
   align-items: center;
 }
 .contacto h1 {
-  margin-top: 300px;
+  margin-top: 700px;
 }
 .contacto .form {
+
   width: 50%;
   height: 50%;
   display: flex;
