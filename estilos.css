@@ -2,7 +2,8 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   scroll-behavior: smooth;
-  }
+  margin: 0;
+}
 html {
   margin: 0;
   padding: 0;
@@ -10,31 +11,32 @@ html {
   scroll-behavior: smooth;
 }
 .main {
-  margin: 0;
   padding: 0;
-  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 body {
   margin: 0;
-  padding: 0;
-  width: 100%;
-  scroll-behavior: smooth;
+  background-color: #171718;
+  color: #fff;
+  padding-top: 0;
 }
+
 a {
   text-decoration: none;
+  color: #fff;
 }
-
-/* sidebar */
-
 .nav-res {
   display: none;
 }
+/* SIDEBAR ---------------*/
 .sidebar {
   background: none;
   margin: 0;
   padding: 0;
-  height: 400px;
-  width: 200px;
+  height: 40vh;
+  width: 20vh;
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
@@ -45,7 +47,7 @@ a {
   z-index: 1;
 }
 .sidebar div {
-  background: #ff8800;
+  background: #00929c;
   width: 100%;
   height: 20%;
   display: flex;
@@ -66,9 +68,10 @@ a {
   padding-left: 20px;
   color: #ffffff;
   z-index: 2;
+  font-size: 1em;
 }
 .sidebar div a i {
-  font-size: 1.6rem;
+  font-size: 2rem;
 
   z-index: 2;
 }
@@ -78,10 +81,10 @@ a {
   transition: 1s;
 }
 
-/* navbar */
+/* NAVBAR ---------------*/
 .navbar {
   position: fixed;
-  height: 30px;
+  height: 1%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -89,15 +92,15 @@ a {
   align-items: center;
   background: #000000;
   padding: 30px;
-  border-bottom: rgb(106, 83, 0) solid 2px;
+  border-bottom: rgb(0, 106, 62) solid 2px;
   z-index: 2;
 }
 .navbar h1 {
-  color: #ffb302;
-  text-shadow: 3px 3px 3px #d30404;
+  color: #03cddb;
+  text-shadow: 3px 3px 3px #068992;
   display: flex;
   font-weight: 800;
-  font-size: 2.3rem;
+  font-size: 2.3em;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -118,8 +121,8 @@ a {
   margin: 10px;
 }
 .navbar .redes a i {
-  font-size: 1.3rem;
-  color: #9602ff;
+  font-size: 1.5rem;
+  color: #07db5f;
 }
 .navbar ul {
   display: flex;
@@ -133,24 +136,27 @@ a {
   margin-right: 20px;
 }
 .navbar ul li a {
+  font-size: 1.3em;
   color: #fff;
+  font-weight: 700;
 }
 .navbar ul li a:hover {
   font-weight: 700;
   color: #9500ff;
 }
-/* inicio */
+
+/* INICIO--------------- */
 .inicio {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to bottom,
     #000000,
     #000000,
     #000000,
     #000000,
     #270d2b
-  );
+  ); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -174,19 +180,19 @@ a {
   width: 30%;
 }
 .inicio .container .img-container img {
-  height: 45%;
-  width: 450px;
+  height: 40em;
+  width: 40em;
   border-radius: 20px;
 }
 
 .inicio .container .text-container {
-  height: 40%;
+  height: 50%;
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 50px;
-  padding-left: 100px;
+  /* padding-left: 100px; */
 }
 
 .inicio .container .text-container h1 {
@@ -197,113 +203,115 @@ a {
 }
 .inicio .container .text-container p {
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.4em;
   height: 50%;
-  color: #d4d2d2;
-  font-weight: 700;
+  color: #fff;
+  font-weight: 600;
 }
 
-.inicio .container .text-container p button {
-  background-color: #9602ff;
-  margin: 20px;
-  margin-top: 5px;
-  border-radius: 5px;
-  border: none;
-}
-.inicio .container .text-container button a{
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.3rem;
-  color: #ffb302;
-}
-.inicio .container .text-container button a:hover{
-  color: #d5dbaf;
-}
 .inicio .container .text-container a {
-  color: #ffb302;
+  color: #00a876;
 }
 .inicio .container .text-container a:hover {
   color: #9602ff;
 }
-/* sobremi */
-.sobremi-container {
-  margin: 0;
-  width: 100%;
-  height: 100vh;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: linear-gradient(
-    to bottom,
-    #270d2b,
-    #000000,
-    #000000,
-    #000000,
-    #000000
-  );
-  text-align: center;
-}
 
-.sobremi-container .sobremi {
-  padding: 40px;
-  height: 50%;
+.experiencia {
+  padding: 10px;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #303131;
 }
-.sobremi-container .sobremi h1 {
-  font-size: 2.4rem;
+.experiencia h1 {
+  color: #fcfcfc;
+  font-size: 2.6rem;
   font-weight: 700;
   text-decoration: underline;
   text-decoration-color: rgb(95, 95, 95);
 }
-.sobremi-container .sobremi ul {
+.experiencia ul {
   list-style: none;
-  padding: 100px;
 }
-.sobremi-container .sobremi ul li {
-  list-style: none;
-  font-size: 1.1rem;
+.experiencia ul li {
+  font-size: 1.2em;
   font-weight: 600;
-  color: #d4d2d2;
+  color: #ffffff;
   margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.sobremi-container .sobremi ul li a {
+.experiencia ul li .text {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.experiencia ul li img {
+  height: 14rem;
+}
+.experiencia ul li a {
   color: rgb(242, 133, 0);
 }
-.sobremi-container .sobremi ul li a:hover {
+.experiencia ul li a:hover {
   text-decoration: underline;
 }
-.sobremi-container .cursos {
-  height: 50%;
+
+.estudios-container {
+  padding: 10px;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #171718;
 }
-.sobremi-container .cursos h1 {
-  font-size: 2.4rem;
+.estudios-container h1 {
+  color: #f5f5f5;
+  font-size: 2.6rem;
+  margin-bottom: 1em;
+  font-weight: 700;
   text-decoration: underline;
   text-decoration-color: rgb(95, 95, 95);
 }
-.sobremi-container .cursos ul {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  height: 100%;
+.estudios-container ul {
+  list-style: none;
 }
-.sobremi-container .cursos ul li {
-  height: 20%;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #d4d2d2;
+.estudios-container ul li {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.estudios-container ul li a {
+  color: rgb(242, 133, 0);
+}
+.estudios-container ul li a:hover {
+  text-decoration: underline;
 }
 
+.estudios {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cursos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /* conocimientos */
 .conocimientos {
   margin: 0;
@@ -311,14 +319,8 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(
-    to bottom,
-    #000000,
-    #000000,
-    #270d2b,
-    #270d2b,
-    #000000
-  );
+  justify-content: center;
+  background-color: #303131;
   color: #fff;
   text-align: center;
 }
@@ -360,8 +362,10 @@ a {
   height: 100px;
 }
 
-/* proyectos */
+/* proyectos -----------*/
 .proyectos-container {
+  padding: 0;
+  margin: 0;
   height: 100vh;
   color: #d4d2d2;
   font-weight: 700;
@@ -369,16 +373,11 @@ a {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-image: linear-gradient(
-    to bottom,
-    #000000,
-    #000000,
-    #270d2b,
-    #270d2b,
-    #000000
-  );
+  justify-content: center;
 }
 .proyectos-container h1 {
+  padding: 0;
+  margin: 0;
   font-size: 2.4rem;
   font-weight: 700;
   text-decoration: underline;
@@ -392,14 +391,20 @@ a {
   flex-wrap: wrap;
   padding-left: 100px;
   padding-right: 100px;
-
+  padding: 0;
+  margin: 0;
+}
+.proyectos {
+  padding: 0;
+  margin: 0;
 }
 .proyectos-container .proyectos .card {
+  font-size: 1.5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width:30%;
+  width: 30%;
   height: 600px;
   margin: 20px;
   border-radius: 20px;
@@ -415,28 +420,20 @@ a {
 
 /* contacto */
 .contacto {
-
   color: #fff;
-  background-image: linear-gradient(
-    to bottom,
-    #000000,
-    #000000,
-    #270d2b,
-    #270d2b,
-    #000000
-  );
+  background-color: #303131;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 50em;
+  padding: 30px;
+  font-size: 1.5em;
 }
-.contacto h1 {
-  margin-top: 700px;
-}
-.contacto .form {
 
+.contacto .form {
   width: 50%;
   height: 50%;
   display: flex;
@@ -489,307 +486,4 @@ a {
 .contacto .contactame a img {
   width: 100px;
   height: 100%;
-}
-@media screen and (max-width: 1300px) {
-  .proyectos-container .proyectos {
-    display: flex;
-    width: 90%;
-  }
-  .proyectos-container .proyectos .card {
-    display: flex;
-    width: 25%;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .navbar h1 {
-    font-size: 1.8rem;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .navbar .redes {
-    display: none;
-  }
-  .navbar ul {
-    display: none;
-  }
-  .navbar i {
-    display: flex;
-    color: #fff;
-    font-size: 2rem;
-  }
-  .inicio .container .img-container img {
-    height: 40%;
-    width: 250px;
-    border-radius: 20px;
-  }
-  .inicio .container .text-container h1 {
-    font-size: 3rem;
-  }
-}
-@media screen and (min-width: 800px) {
-  .main {
-    display: block;
-  }
-}
-@media screen and (max-width: 800px) {
-  .main {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-  .navbar {
-    padding: 0;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 2;
-    width: 100%;
-    padding-top: 10px;
-  }
-  .navbar h1 {
-    font-size: 1.4rem;
-    justify-content: center;
-  }
-  .inicio {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .inicio .container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-  .inicio .container .img-container {
-    height: 50%;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .inicio .container .img-container img {
-    height: 250px;
-    width: 250px;
-    border-radius: 20px;
-    margin-bottom: 150px;
-  }
-
-  .inicio .container .text-container {
-    padding: 0;
-    margin: 0;
-    height: 50%;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-  }
-
-  .inicio .container .text-container h1 {
-    font-size: 2rem;
-    height: 50%;
-    margin-bottom: 0;
-    text-decoration: underline rgb(90, 90, 90);
-  }
-  .inicio .container .text-container p {
-    font-size: 1rem;
-    height: 50%;
-    width: 100%;
-    font-weight: 700;
-    margin-bottom: 0;
-  }
-  .sobremi-container {
-    height: 100%;
-  }
-  .sobremi-container .sobremi {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  .sobremi-container .sobremi ul {
-    list-style: none;
-    padding: 15px;
-  }
-
-  .conocimientos {
-    width: 100%;
-    height: 100%;
-  }
-
-  .conocimientos p {
-    margin: 20px;
-  }
-
-  .conocimientos .aptitudes .tech-list {
-    width: 100%;
-  }
-
-  .conocimientos .aptitudes .tech-list .img-container {
-    margin-right: 20px;
-    margin-left: 20px;
-    height: 80px;
-  }
-  .conocimientos .aptitudes .tech-list .img-container img {
-    height: 40px;
-    width: 40px;
-  }
-  .proyectos-container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .proyectos-container h1 {
-    margin-top: 100px;
-  }
-  .proyectos-container .proyectos {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-  }
-  .proyectos-container .proyectos .card {
-    display: flex;
-    height: 30%;
-    width: 80%;
-  }
-  .proyectos-container .proyectos .card p {
-    font-size: 0.9rem;
-    width: 80%;
-  }
-  .proyectos-container .proyectos .card a {
-    font-size: 1rem;
-    margin: 10px;
-    width: 80%;
-  }
-  .contacto {
-    height: 100%;
-    width: 100%;
-  }
-
-  .contacto .form form textarea {
-    width: 300px;
-    height: 200px;
-  }
-  .navbar i {
-    cursor: pointer;
-  }
-  .nav-res {
-    color: #fff;
-    background-image: linear-gradient(
-      to bottom,
-      #000000,
-      #000000,
-      #30064d,
-      #ff0080,
-      #773f0b
-    );
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 100px;
-  }
-
-  .nav-res h1 {
-    color: #ffb302;
-    text-shadow: 3px 3px 3px #d30404;
-    display: flex;
-    font-weight: 800;
-    font-size: 2.3rem;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-  .nav-res .redes {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .nav-res .redes p {
-    font-size: 1.4rem;
-  }
-  .nav-res .redes a {
-    font-size: 2rem;
-
-    color: #fff;
-    margin: 10px;
-  }
-  .nav-res ul {
-    list-style: circle #ff7b00;
-  }
-  .nav-res ul li {
-    color: #fff;
-    margin: 30px;
-    font-size: 2rem;
-  }
-  .nav-res ul li a {
-    color: #fff;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .sidebar {
-    margin: 0 auto;
-    height: 200px;
-    width: 100%;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: left;
-    top: 40px;
-    left: 0px;
-    z-index: 1;
-  }
-  .sidebar div {
-    background: #000000;
-
-    width: 100%;
-    height: 20%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-
-  .sidebar div a {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    color: #ffffff;
-    z-index: 2;
-  }
-  .sidebar div a i {
-    font-size: 0.7rem;
-    margin: 5px;
-    z-index: 1;
-  }
-  .sidebar div a p {
-    font-size: 0.7rem;
-    z-index: 1;
-  }
-  .sidebar div:hover {
-    background: #52029d;
-    transform: translateX(0);
-    transition: 1s;
-  }
 }
