@@ -2,305 +2,289 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jeremías Avero" />
+    <meta name="description" content="Portafolio" />
+    <meta name="keywords" content="Java, Spring, React, Typescrypt, MySQL" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Jeremías Avero</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link rel="stylesheet" href="estilos.css" />
-    <style>
-      .hidden {
-        display: none;
-      }
-    </style>
+    <link rel="icon" type="image/x-icon" href="images/dev.png" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fonts Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- nav -->
-
     <!-- main -->
-    <div class="main" id="main">
-      <nav class="navbar">
-        <h1>Jeremías B. Avero</h1>
-        <!-- <i class="bi bi-justify" id="nav-res-btn"></i> -->
-        <div class="redes">
-          <p>Redes:</p>
-          <a
-            href="https://www.linkedin.com/in/jerem%C3%ADas-bernab%C3%A9-avero-537938263/"
+    <main>
+      <!-- Navegacion -->
+      <nav
+        class="navbar navbar-expand-lg bg-body-dark navbar-dark rounded fixed-top bg-dark"
+        aria-label="Thirteenth navbar example"
+      >
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample11"
+            aria-controls="navbarsExample11"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-            <i class="bi bi-linkedin"></i>
-          </a>
-          <a href="https://www.instagram.com/jere_avero.cs/">
-            <i class="bi bi-instagram"></i>
-          </a>
-          <a href="https://github.com/JeremiasAvero">
-            <i class="bi bi-github"></i>
-          </a>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+            <a class="navbar-brand col-lg-3 me-0" href="#"
+              ><i class="bi bi-code-slash"></i> Jeremías Avero</a
+            >
+            <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Inicio"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#Experiencia">Experiencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#Estudios">Estudios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#Conocimientos"
+                  >Conocimientos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#Proyectos">Proyectos</a>
+              </li>
+            </ul>
+            <!-- <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+              <button class="btn btn-primary">Button</button>
+            </div> -->
+          </div>
         </div>
-        <ul>
-          <li><a href="#Inicio">Inicio</a></li>
-          <li><a href="#Experiencia">Experiencia</a></li>
-          <li><a href="#Estudios">Estudios</a></li>
-          <li><a href="#Conocimientos">Conocimientos</a></li>
-          <li><a href="#Proyectos">Proyectos</a></li>
-          <li><a href="#Contactame">Contacto</a></li>
-        </ul>
       </nav>
 
-      <!-- sidebar-->
-      <section class="sidebar">
-        <div>
-          <a
-            href="https://www.linkedin.com/in/jerem%C3%ADas-bernab%C3%A9-avero-537938263/"
-            ><p>Linked In</p>
-            <i class="bi bi-linkedin"></i
-          ></a>
-        </div>
-        <div>
-          <a href="https://github.com/JeremiasAvero"
-            ><p>GitHub</p>
-            <i class="bi bi-github"></i>
-          </a>
-        </div>
-        <div>
-          <a href="#Contacto"
-            ><p>E-Mail</p>
-            <i class="bi bi-envelope-at"></i
-          ></a>
-        </div>
-        <div>
-          <a href="#" id="Resume"
-            ><p>Resume CV</p>
-            <i class="bi bi-file-earmark-person"></i
-          ></a>
-        </div>
-      </section>
-      <section id="Inicio" class="inicio">
-        <div class="container">
-          <div class="text-container">
-            <h1>Desarrollador de Software Backend</h1>
+      <div class="divider" id="Inicio"></div>
 
-            <p>
-              <a style="border-bottom: dashed rgb(40, 119, 60)">Bienvenido!!</a>
-              Mi nombre es Jeremías Avero, soy Desarrollador de Software Backend
-              recibido de Técnico Superior en Desarrollo de Software, tengo 4
-              años en el mundo de la programación. En esta página podras
-              encontrar todo sobre mis
-              <a href="#Conocimientos">Conocimientos</a>,
-              <a href="#Estudios">Estudios</a> ,
-              <a href="#Experiencia">Experiencia</a> y
-              <a href="#Proyectos">Proyectos</a>.
-            </p>
-          </div>
+      <section class="inicio vh-100">
+        <div
+          class="container-fluid d-flex flex-column p-5 flex-sm-row justify-content-center align-items-center gap-5"
+        >
           <div class="img-container">
             <img
-              class="cara"
+              class="rounded-circle"
               src="images/screencapture-photos-google-u-0-photo-AF1QipPlBOzYwkGaBsF1YOoFU1fwxzjvu6RFEuNemUTv-2024-01-09-16_33_16.png"
               alt="Maxi Programa"
             />
           </div>
-        </div>
-      </section>
-      <!-- sobremi -->
-      <section id="Experiencia" class="experiencia">
-        <h1>Experiencia</h1>
-        <ul>
-          <li>
-            <img src="./images/nocountry.png" alt="" />
-            <div class="text">
-              <p style="margin-top: 2em; color: #07db5f; font-size: 1.5em">
-                - Desarrollador Backend con C# y .NET
-              </p>
-              <a href="" style="font-size: 1.2em">No Country.</a>
-              <p style="margin-top: 2em; color: #a8afaf">
-                Aptitudes adquiridas:
-              </p>
-              <ul>
-                <li>- Trabajo en equipo.</li>
-                <li>- Uso de Git Hub.</li>
-                <li>- Desarrollo con C# y .NET (EF, Seguridad con JWT).</li>
-                <li>
-                  - Desarrollo con NodeJs y Typescript (TypeORM, Seguridad con
-                  JWT y Passport).
-                </li>
-                <li>- Base de datos Server SQL y PostgreSQL.</li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <img src="./images/ies48.jpg" alt="" />
-            <div class="text">
-              <p style="margin-top: 2em; color: #07db5f; font-size: 1.5em">
-                - Adscripto Ingenieria de Software
-              </p>
+          <div class="text-container">
+            <h1><span><</span> Hola! Soy Jeremías Avero. <span>/></span></h1>
 
-              <a
-                style="font-size: 1.2em"
-                href="https://esc48-sfe.infd.edu.ar/sitio/"
-                >Instituto de Educación Superior Nro. 48 "Gral. José de San
-                Martín".</a
-              >
-              <p style="margin-top: 2em; color: #a8afaf">
-                Aptitudes adquiridas:
-              </p>
-              <ul>
-                <li>- Docencia</li>
-                <li>- Comunicación.</li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section id="Estudios" class="estudios-container">
-        <div class="estudios">
-          <h1>Estudios</h1>
-          <ul>
-            <p
-              style="
-                text-decoration: underline rgb(90, 90, 90);
-                margin-top: 2em;
-                color: #04b1a2;
-                font-size: 1.4em;
-              "
-            >
-              Terciario - Técnico Superior: Desarrollo de Software.
+            <p>
+              Soy Desarrollador de Software backend y Técnico Superior en
+              Desarrollo de Software. En esta página podras encontrar todo sobre
+              mis <a href="#Conocimientos">Conocimientos</a>,
+              <a href="#Experiencia">Experiencia</a> y
+              <a href="#Proyectos">Proyectos</a>.
             </p>
-            <li>
-              03/2021 - 11/2023 -/
-              <a href="https://esc48-sfe.infd.edu.ar/sitio/"
-                >Instituto de Educación Superior Nro. 48 "Gral. José de San
-                Martín".</a
-              >| Totoras, Santa Fe, Argentina.
-            </li>
-            <p
-              style="
-                text-decoration: underline rgb(90, 90, 90);
-                margin-top: 2em;
-                color: #04b1a2;
-                font-size: 1.4em;
-              "
-            >
-              Secundario - Bachiller: Economía y Administración.
-            </p>
-            <li>
-              03/2015 - 11/2020 -/
-              <a href="https://esc48-sfe.infd.edu.ar/sitio/"
-                >Instituto de Educación Superior Nro. 48 "Gral. José de San
-                Martín".</a
-              >
-              | Totoras, Santa Fe, Argentina.
-            </li>
-          </ul>
-        </div>
-        <div class="cursos">
-          <h1>Cursos realizados</h1>
-          <ul>
-            <li>
-              Curso C# .NET Core 8 with MS SQL Complete Beginner to Master 2024
-              - Udemy
-              <a href="#" id="c1"><p>> Certificate</p> </a>
-            </li>
-            <li>
-              Curso de Programación Backend con C# .NET - Udemy
-              <a href="#" id="c2"><p>> Certificate</p> </a>
-            </li>
-            <li>
-              Curso de C# - Udemy
-              <a href="#" id="c3"><p>> Certificate</p> </a>
-            </li>
-            <li>
-              Curso de Programación con C# Nivel 3: Web ASP .NET Parte 1. -
-              Maxiprograma<a href="#" id="c4"><p>> Certificate</p> </a>
-            </li>
 
-            <li>
-              Curso de Programación con C# Nivel 2: POO + .NET + SQL. -
-              Maxiprograma -
-              <a href="#" id="c5"><p>> Certificate</p> </a>
-            </li>
-            <li>
-              Curso de Programación con C# Nivel 1 [Desde Cero]. -
-              Maxiprograma<a href="#" id="c6"><p>> Certificate</p> </a>
-            </li>
-          </ul>
+            <ul
+              class="navbar-nav d-flex flex-row justify-content-center gap-5 align-items-center"
+            >
+              <li class="nav-item">
+                <a
+                  href="https://www.linkedin.com/in/jerem%C3%ADas-bernab%C3%A9-avero-537938263/"
+                  class="nav-link secondary text-white border-bottom border-danger"
+                >
+                  Contactame y Trabajemos Juntos! ->
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://www.linkedin.com/in/jerem%C3%ADas-bernab%C3%A9-avero-537938263/"
+                  class="nav-link secondary"
+                >
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://www.instagram.com/jere_avero.cs/"
+                >
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/JeremiasAvero">
+                  <i class="bi bi-github"></i>
+                </a>
+              </li>
+              <!-- <button class="btn btn-primary">Descara mi CV</button> -->
+            </ul>
+          </div>
         </div>
       </section>
+      <!-- Experiencia y Estudios -->
+      <section
+        class="experiencia vh-100 container-fluid d-flex flex-column justify-content-center align-items-stretch"
+      >
+        <h2 class="text-bg-light mb-4 fw-bold">Experiencia y Estudios</h2>
+        <h4 class="border-bottom border-primary" id="Experiencia">
+          Experiencia:
+        </h4>
+        <div class="row d-flex flex-column p-3 h-25">
+          <div class="col">
+            <p>- Desarrollador Freelancer | 2023 - actualidad.</p>
+          </div>
+          <div class="col">
+            <p>
+              - Desarrollador Backend en:
+              <a href="">No Country.</a>
+            </p>
+          </div>
+
+          <div class="">
+            <p>- Adscripto Ingenieria de Software en:</p>
+            <a href="https://esc48-sfe.infd.edu.ar/sitio/" class="w-50"
+              >Instituto de Educación Superior Nro. 48 "Gral. José de San
+              Martín".</a
+            >
+          </div>
+        </div>
+        <!-- Estudios -->
+        <h4 class="border-bottom border-success" id="Estudios">Estudios:</h4>
+        <div class="estudios row d-flex h-50 flex-column">
+          <div class="col d-flex flex-column align-items-baseline p-3">
+            <p>Terciario - Técnico Superior: Desarrollo de Software.</p>
+            03/2021 - 11/2023 -/
+            <a href="https://esc48-sfe.infd.edu.ar/sitio/" class="w-50"
+              >Instituto de Educación Superior Nro. 48 "Gral. José de San
+              Martín".</a
+            >| Totoras, Santa Fe, Argentina.
+          </div>
+
+          <div class="col d-flex flex-column align-items-baseline p-3">
+            <p>Secundario - Bachiller: Economía y Administración.</p>
+            03/2015 - 11/2020 | Instituto:
+            <a href="https://esc48-sfe.infd.edu.ar/sitio/" class="w-50">
+              Instituto de Educación Superior Nro. 48 "Gral. José de San
+              Martín".</a
+            >
+            | Totoras, Santa Fe, Argentina.
+          </div>
+        </div>
+      </section>
+
       <!-- conocimientos -->
-      <section id="Conocimientos" class="conocimientos">
-        <h1>Conocimientos</h1>
-        <p>Estas son las tecnologías en las que tengo conocimientos.</p>
+      <section
+        id="Conocimientos"
+        class="conocimientos d-flex flex-column container"
+      >
+        <h2 class="text-bg-light mb-4 fw-bold">Conocimientos</h2>
+        <div>
+          <ul class="list-unstyled">
+            <li>
+              <i class="bi bi-code-slash"></i> Desarrollo de Rest API, Páginas y
+              Aplicaciones Web.
+            </li>
+            <li>
+              <i class="bi bi-code-slash"></i> Desarrollo Backend con Java y
+              Spring.
+            </li>
+            <li>
+              <i class="bi bi-code-slash"></i> Desarrollo Frontend con
+              TypeScript y React.
+            </li>
+            <li>
+              <i class="bi bi-code-slash"></i> Creación y gestión de bases de
+              datos MySql.
+            </li>
+          </ul>
+        </div>
+        <p>Estas son las tecnologías que utilizo como desarrollador.</p>
         <div class="aptitudes">
-          <div class="tech-list">
+          <div class="tech-list d-flex flex-row justify-content-around mb-3">
+            <!-- java -->
             <div
               class="img-container"
-              style="box-shadow: 4px 4px 7px rgb(168, 0, 251)"
-            >
-              <img src="images/tech/csharp.png " class="tech" alt="" />
-            </div>
-            <div
-              class="img-container"
-              style="box-shadow: 4px 4px 7px rgb(255, 81, 0)"
+              style="box-shadow: 0.1rem 0.2rem 0.3rem rgb(230, 67, 3)"
             >
               <img
-                style="width: 40%"
                 src="images/tech/kisspng-java-runtime-environment-computer-icons-java-platf-java-5ade30636221c2.932728411524510819402.jpg"
                 class="tech"
                 alt=""
+                style="height: 4rem"
               />
             </div>
-
+            <!-- spring -->
             <div
               class="img-container"
-              style="box-shadow: 4px 4px 7px rgb(0, 88, 251)"
-            >
-              <img src="images/tech/typescript.png " class="tech" alt="" />
-            </div>
-            <div
-              class="img-container"
-              style="box-shadow: 4px 4px 7px rgb(40, 152, 3)"
-            >
-              <img src="images/tech/nodejs.png" class="tech" alt="" />
-            </div>
-            <div
-              class="img-container"
-              style="box-shadow: 4px 4px 7px rgb(103, 0, 154)"
-            >
-              <img src="images/tech/net.jpg" class="tech" alt="" />
-            </div>
-          </div>
-          <div class="tech-list">
-            <div
-              class="img-container"
-              style="box-shadow: 4px 4px 7px rgb(39, 157, 2)"
+              style="box-shadow: 0.1rem 0.2rem 0.3rem rgb(8, 143, 42)"
             >
               <img src="images/tech/spring.png" class="tech" alt="" />
             </div>
+            <!-- typescript -->
             <div
               class="img-container"
-              style="box-shadow: 4px 4px 7px rgb(0, 167, 251)"
+              style="box-shadow: 0.1rem 0.2rem 0.3rem rgb(3, 90, 221)"
+            >
+              <img src="images/tech/typescript.png " class="tech" alt="" />
+            </div>
+            <!-- react -->
+            <div
+              class="img-container"
+              style="box-shadow: 0.1rem 0.2rem 0.3rem rgb(2, 191, 224)"
+            >
+              <img src="images/tech/react.png " class="tech" alt="" />
+            </div>
+          </div>
+          <div
+            class="tech-list d-flex flex-row container-fluid justify-content-around"
+          >
+            <!-- csharp -->
+            <div
+              class="img-container"
+              style="box-shadow: 0.1rem 0.2rem 0.3rem rgb(147, 3, 230)"
+            >
+              <img src="images/tech/csharp.png " class="tech" alt="" />
+            </div>
+            <!-- .net -->
+            <div
+              class="img-container"
+              style="box-shadow: 0.1rem 0.2rem 0.3rem rgb(114, 2, 179)"
+            >
+              <img src="images/tech/net.jpg" class="tech" alt="" />
+            </div>
+            <!-- mysql -->
+            <div
+              class="img-container"
+              style="box-shadow: 0.1rem 0.2rem 0.3rem rgb(230, 124, 3)"
             >
               <img src="images/tech/mysql.png" class="tech" alt="" />
             </div>
+            <!-- gihub -->
             <div
               class="img-container"
-              style="box-shadow: 4px 4px 7px rgb(251, 0, 0)"
-            >
-              <img
-                src="images/tech/microsoft-sql-server.png"
-                class="tech"
-                alt=""
-              />
-            </div>
-            <div
-              class="img-container"
-              style="box-shadow: 4px 4px 7px rgb(0, 171, 251)"
-            >
-              <img src="images/tech/postgre.png " class="tech" alt="" />
-            </div>
-            <div
-              class="img-container"
-              style="box-shadow: 4px 4px 7px rgb(255, 255, 255)"
+              style="box-shadow: 0.1rem 0.2rem 0.3rem rgb(255, 255, 255)"
             >
               <img src="images/tech/github2-60d03f0f.png" class="tech" alt="" />
             </div>
@@ -308,151 +292,119 @@
         </div>
       </section>
       <!-- proyectos -->
-      <section id="Proyectos" class="proyectos-container">
-        <h1>Mis Proyectos</h1>
-        <div class="proyectos">
-          <div class="card">
-            <h3>Gaming shop</h3>
-            <img src="images/GamingShop.png" />
-            <p>
-              Catalogo de productos, carrito, perfil de admin, eleccion y armado
-              de pc. Tools: C#, .Net Core, MVC, Razor Pages, Javascript,
-              SqlServer, FireBase, Azure Deploy.
-            </p>
-            <!-- <a style="border-bottom: solid rgb(180, 180, 6); margin-bottom: 10px;" href="https://gamershop.azurewebsites.net/"
+      <section
+        id="Proyectos"
+        class="proyectos-container d-flex flex-column container"
+      >
+        <h2 class="text-bg-light mb-4 fw-bold">Mis Proyectos</h2>
+        <div
+          class="proyectos d-flex flex-column flex-lg-wrap justify-content-center align-items-center"
+        >
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <h3>Gaming shop</h3>
+                <img src="images/GamingShop.png" />
+                <p>
+                  Catalogo de productos, carrito, perfil de admin, eleccion y
+                  armado de pc. Tools: C#, .Net Core, MVC, Razor Pages,
+                  Javascript, SqlServer, FireBase, Azure Deploy.
+                </p>
+                <!-- <a style="border-bottom: solid rgb(180, 180, 6); margin-bottom: 10px;" href="https://gamershop.azurewebsites.net/"
               > - (Deploy)Ver Página</a> -->
-            <a
-              style="margin-bottom: 6px"
-              href="https://github.com/JeremiasAvero/GameShopMVC"
-            >
-              - Ver Código</a
-            >
-          </div>
-          <div class="card">
-            <h3>API REST Users and Posts</h3>
-            <img src="images/usersapis.png" />
-            <p>
-              Users API REST, JWT Authentication,Login, Registration, Users
-              CRUD, Posts CRUD, Tools: C#, .Net8, Web API, Dapper, MS Sql ,
-              SqlServer, FireBase.
-            </p>
-            <!-- <a style="border-bottom: solid rgb(180, 180, 6); margin-bottom: 10px;" href="https://gamershop.azurewebsites.net/"
+                <a
+                  style="margin-bottom: 6px"
+                  href="https://github.com/JeremiasAvero/GameShopMVC"
+                >
+                  - Ver Código</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <h3>API REST Users and Posts</h3>
+                <img src="images/usersapis.png" />
+                <p>
+                  Users API REST, JWT Authentication,Login, Registration, Users
+                  CRUD, Posts CRUD, Tools: C#, .Net8, Web API, Dapper, MS Sql ,
+                  SqlServer, FireBase.
+                </p>
+                <!-- <a style="border-bottom: solid rgb(180, 180, 6); margin-bottom: 10px;" href="https://gamershop.azurewebsites.net/"
               > - (Deploy)Ver Página</a> -->
-            <a
-              style="margin-bottom: 6px"
-              href="https://github.com/JeremiasAvero/UsersAPI"
-            >
-              - Ver Código</a
-            >
-          </div>
-
-          <div class="card">
-            <h3>API de productos</h3>
-            <img src="images/productsapi.png" />
-            <p>
-              Api de productos de pc, crud, hecho con NodeJs, Express, MySql y
-              documentada con SwaggerUI.
-            </p>
-            <a
-              href="https://github.com/JeremiasAvero/gameshop-nodejs-express-mysql"
-              >Ver Código</a
-            >
-          </div>
-          <div class="card">
-            <h3>API de peliculas</h3>
-            <img src="images/moviesapi.jpg" />
-            <p>
-              Api de peliculas, crud, MVC. Desarrollado con NodeJs, Express,
-              MongoDb Atlas y documentada con SwaggerUI.
-            </p>
-            <a
-              href="
+                <a
+                  style="margin-bottom: 6px"
+                  href="https://github.com/JeremiasAvero/UsersAPI"
+                >
+                  - Ver Código</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <h3>API de productos</h3>
+                <img src="images/productsapi.png" />
+                <p>
+                  Api de productos de pc, crud, hecho con NodeJs, Express, MySql
+                  y documentada con SwaggerUI.
+                </p>
+                <a
+                  href="https://github.com/JeremiasAvero/gameshop-nodejs-express-mysql"
+                  >Ver Código</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <h3>API de peliculas</h3>
+                <img src="images/moviesapi.jpg" />
+                <p>
+                  Api de peliculas, crud, MVC. Desarrollado con NodeJs, Express,
+                  MongoDb Atlas y documentada con SwaggerUI.
+                </p>
+                <a
+                  href="
           https://github.com/JeremiasAvero/movies-rest-api-deploy"
-              >Ver Código</a
-            >
-          </div>
-          <div class="card">
-            <h3>API de Users</h3>
-            <img src="images/usersapi.png" />
-            <p>
-              Api de usuarios, crud, hecho con NodeJs, Express, MongoDb y
-              SwaggerUI
-            </p>
-            <a href="https://github.com/JeremiasAvero/NodeJs-MongoDb-Users"
-              >Ver Código</a
-            >
-          </div>
-
-          <div class="card">
-            <h3>Catálogo de productos</h3>
-            <img src="images/catalogo.png" />
-            <p>
-              Catalogo de artículos, pagina de favoritos con perfiles de usuario
-              y admin hecho con c# y asp.net y SqlServer principalmente
-            </p>
-            <a
-              href="https://github.com/JeremiasAvero/tp-final-nivel3-avero-jeremias"
-              >Ver Código</a
-            >
+                  >Ver Código</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <h3>API de Users</h3>
+                <img src="images/usersapi.png" />
+                <p>
+                  Api de usuarios, crud, hecho con NodeJs, Express, MongoDb y
+                  SwaggerUI
+                </p>
+                <a href="https://github.com/JeremiasAvero/NodeJs-MongoDb-Users"
+                  >Ver Código</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <h3>Catálogo de productos</h3>
+                <img src="images/catalogo.png" />
+                <p>
+                  Catalogo de artículos, pagina de favoritos con perfiles de
+                  usuario y admin hecho con c# y asp.net y SqlServer
+                  principalmente
+                </p>
+                <a
+                  href="https://github.com/JeremiasAvero/tp-final-nivel3-avero-jeremias"
+                  >Ver Código</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <footer id="Contacto" class="contacto">
-        <h1>Contactame</h1>
-        <div class="form">
-          <form
-            action="https://formsubmit.co/jeremiasavero98@gmail.com"
-            method="POST"
-          >
-            <label for="">Nombre</label>
-            <input type="text" name="name" required />
-
-            <label for="">Correo electrónico</label>
-            <input type="email" name="email" required />
-
-            <label for="">Asunto</label>
-            <input type="text" name="subject" required />
-
-            <label for="">Mensaje</label>
-
-            <textarea
-              name="comments"
-              id="Mensaje"
-              cols="15"
-              rows="5"
-            ></textarea>
-            <input class="submit" type="submit" value="Enviar" />
-            <input type="hidden" name="_next" value="" />
-          </form>
-        </div>
-      </footer>
-    </div>
-    <!-- mobil naav -->
-    <nav class="nav-res">
-      <h1>Jeremías B. Avero</h1>
-
-      <div class="redes">
-        <p>Redes:</p>
-        <a
-          href="https://www.linkedin.com/in/jerem%C3%ADas-bernab%C3%A9-avero-537938263/"
-        >
-          <i class="bi bi-linkedin"></i>
-        </a>
-        <a href="https://www.instagram.com/jere_avero.cs/">
-          <i class="bi bi-instagram"></i>
-        </a>
-        <a href="https://github.com/JeremiasAvero">
-          <i class="bi bi-github"></i>
-        </a>
-      </div>
-      <ul>
-        <li><a class="enlace" href="#Inicio">Inicio</a></li>
-        <li><a class="enlace" href="#SobreMi">Sobre Mi</a></li>
-        <li><a class="enlace" href="#Conocimientos">Conocimientos</a></li>
-        <li><a class="enlace" href="#Proyectos">Proyectos</a></li>
-        <li><a class="enlace" href="#Contactame">Contacto</a></li>
-      </ul>
-    </nav>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>

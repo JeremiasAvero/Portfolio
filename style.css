@@ -1,0 +1,145 @@
+* {
+  font-family: sans-serif;
+  color: white;
+  font-size: 0.84rem;
+  font-family: "PT Sans", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(
+    to right,
+    #000000,
+    #101010,
+    #191919,
+    #232323,
+    #2c2c2c
+  );
+}
+img {
+  width: 1rem;
+}
+/* Navegacion */
+.navbar i {
+  font-size: 2.1rem;
+  background: linear-gradient(
+    to right,
+    #02e272,
+    #d4c6c6,
+    #fcb045
+  ); /* Gradiente de izquierda a derecha */
+  -webkit-background-clip: text; /* Clip del fondo al texto para navegadores basados en WebKit */
+  background-clip: text; /* Clip del fondo al texto */
+  color: transparent;
+}
+.divider {
+  content: "";
+  height: 10rem;
+}
+
+.inicio span {
+  color: #fd1d1d;
+}
+.inicio img {
+  width: 8rem;
+  height: 8rem;
+  border: solid rgb(3, 126, 79) 2px;
+}
+.inicio i {
+  border-bottom: solid white 0.1rem;
+}
+.inicio i:hover {
+  border-bottom: solid rgb(173, 7, 7) 0.1rem;
+}
+
+.inicio span {
+  font-size: 3rem;
+}
+
+.inicio a {
+  color: #fd1d1d;
+  text-decoration: none;
+}
+.bi-linkedin {
+  color: #248bf3;
+}
+.bi-instagram {
+  background: linear-gradient(
+    to right,
+    #833ab4,
+    #fd1d1d,
+    #fcb045
+  ); /* Gradiente de izquierda a derecha */
+  -webkit-background-clip: text; /* Clip del fondo al texto para navegadores basados en WebKit */
+  background-clip: text; /* Clip del fondo al texto */
+  color: transparent;
+}
+
+.bi-github {
+  color: #fafafa;
+}
+
+.bi-instagram,
+.bi-github,
+.bi-linkedin {
+  font-size: 2rem;
+}
+
+.estudios a {
+  color: rgb(19, 224, 105);
+}
+
+.proyectos img {
+  width: 2rem;
+}
+
+.conocimientos {
+  height: 400px;
+}
+.conocimientos img {
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem;
+}
+
+.card {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #232323;
+  width: 75%;
+  max-width: 30rem;
+  height: 30rem;
+  margin: 5rem;
+}
+.card img {
+  width: 100%;
+  height: 60%;
+}
+
+@media screen and (min-width: 767px) {
+  * {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+  .inicio span {
+    font-size: 3rem;
+  }
+  .inicio p {
+    font-size: 1.4rem;
+  }
+  .inicio a {
+    font-size: 1.4rem;
+  }
+  .inicio img {
+    width: 14rem;
+    height: 14rem;
+  }
+  .conocimientos {
+    margin-bottom: 10rem;
+  }
+}

@@ -82,16 +82,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
-// let mainContainer = document.getElementById("main");
-// let btn = document.getElementById("nav-res-btn");
-// btn.addEventListener("click", () => {
-//   console.log("hola");
-//   if (
-//     mainContainer.style.display === "none" ||
-//     mainContainer.style.display === ""
-//   ) {
-//     mainContainer.style.display = "block"; // or "inline" or any other valid display value
-//   } else {
-//     mainContainer.style.display = "none";
-//   }
-// });
